@@ -1,0 +1,8 @@
+ghost:
+  image: ghost
+  volumes:
+   - ./ghost:/var/lib/ghost
+  ports:
+   - "30004:2368"
+  environment:
+   - NODE_ENV=production
