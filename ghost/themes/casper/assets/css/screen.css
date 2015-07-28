@@ -189,7 +189,7 @@ body {
     letter-spacing: 0.01rem;
     font-size: 1.8rem;
     line-height: 1.75em;
-    color: #3A4145;
+    color: rgb(139, 87, 137); 
     -webkit-font-feature-settings: 'kern' 1;
     -moz-font-feature-settings: 'kern' 1;
     -o-font-feature-settings: 'kern' 1;
@@ -197,11 +197,11 @@ body {
 }
 
 ::-moz-selection {
-    background: #D6EDFF;
+    background: rgb(245, 243, 244);
 }
 
 ::selection {
-    background: #D6EDFF;
+    background: rgb(245, 243, 244);
 }
 
 h1, h2, h3,
@@ -209,7 +209,7 @@ h4, h5, h6 {
     -webkit-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
     -moz-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
     -o-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
-    color: #2E2E2E;
+    color: rgb(139, 87, 137);
     line-height: 1.15em;
     margin: 0 0 0.4em 0;
     font-family: "Open Sans", sans-serif;
@@ -244,12 +244,12 @@ h6 {
 }
 
 a {
-    color: #4A4A4A;
+    color: rgb(139, 87, 137);
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #111;
+    color: rgb(139, 87, 137);
 }
 
 p, ul, ol, dl {
@@ -309,7 +309,7 @@ blockquote {
     box-sizing: border-box;
     margin: 1.75em 0 1.75em -2.2em;
     padding: 0 0 0 1.75em;
-    border-left: #4A4A4A 0.4em solid;
+    border-left: rgb(139, 87, 137) 0.4em solid;
 }
 
 blockquote p {
@@ -486,9 +486,9 @@ margin on the iframe, cause it breaks stuff. */
 
 body.nav-opened .site-wrapper {
     overflow-x: hidden;
-    -webkit-transform: translate3D(-240px, 0, 0);
-        -ms-transform: translate3D(-240px, 0, 0);
-            transform: translate3D(-240px, 0, 0);
+    -webkit-transform: translate3D(240px, 0, 0);
+        -ms-transform: translate3D(240px, 0, 0);
+            transform: translate3D(240px, 0, 0);
     -webkit-transition: -webkit-transform 0.3s ease;
             transition: transform 0.3s ease;
 }
@@ -530,8 +530,8 @@ body.nav-opened .site-wrapper {
 body.nav-opened .nav-cover {
     position: fixed;
     top: 0;
-    left: 0;
-    right: 240px;
+    right: 0;
+    left: 240px;
     bottom: 0;
     z-index: 200;
 }
@@ -539,12 +539,12 @@ body.nav-opened .nav-cover {
 .nav {
     position: fixed;
     top: 0;
-    right: 0;
+    left: 0;
     bottom: 0;
     z-index: 5;
     width: 240px;
     opacity: 0;
-    background: #111;
+    background: rgb(50, 15, 35);
     margin-bottom: 0;
     text-align: left;
     overflow-y: auto;
@@ -555,9 +555,9 @@ body.nav-opened .nav-cover {
 }
 
 body.nav-closed .nav {
-    -webkit-transform: translate3D(97px, 0, 0);
-        -ms-transform: translate3D(97px, 0, 0);
-            transform: translate3D(97px, 0, 0);
+    -webkit-transform: translate3D(-97px, 0, 0);
+        -ms-transform: translate3D(-97px, 0, 0);
+            transform: translate3D(-97px, 0, 0);
 }
 
 body.nav-opened .nav {
@@ -786,11 +786,11 @@ body.nav-opened .nav {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     display: inline-block;
-    float: right;
+    float: left;
     height: 38px;
     padding: 0 15px;
     border-style: solid;
-    border-width: 1px;
+    border-width: 0;
     opacity: 1;
     text-align: center;
     font-size: 12px;
@@ -799,6 +799,9 @@ body.nav-opened .nav {
     white-space: nowrap;
     border-radius: 3px;
     transition: all 0.5s ease;
+    position: fixed;
+    top: 30px;
+    left: 20px;
 }
 .menu-button:before {
     font-size: 12px;
@@ -808,7 +811,7 @@ body.nav-opened .nav {
     top: 1px;
 }
 .menu-button:hover {
-    background: #fff;
+   /* background: #fff;*/
 }
 .menu-button:focus {
     outline: 0;
@@ -836,12 +839,12 @@ body.nav-opened .nav {
 /* When the navigation is opened */
 .nav-opened .menu-button {
     padding: 0 12px;
-    background: #111;
-    border-color: #111;
+   /* background: #111;
+    border-color: #111;*/
     color: #fff;
-    -webkit-transform: translate3D(94px, 0, 0);
-        -ms-transform: translate3D(94px, 0, 0);
-            transform: translate3D(94px, 0, 0);
+    -webkit-transform: translate3D(-94px, 0, 0);
+        -ms-transform: translate3D(-94px, 0, 0);
+            transform: translate3D(-94px, 0, 0);
     transition: all 0.3s ease;
 }
 
@@ -1159,7 +1162,7 @@ body:not(.post-template) .post-title {
 }
 
 .post-footer h4 a {
-    color: #2e2e2e;
+    color: rgb(139, 87, 137);
     text-decoration: none;
 }
 
@@ -1774,11 +1777,11 @@ body:not(.post-template) .post-title {
         padding: 0 5px;
         border-radius: 0;
         border-width: 0;
-        color: #2e2e2e;
+        color: rgb(139, 87, 137);
         background: transparent;
     }
     .menu-button:hover {
-        color: #2e2e2e;
+        color: rgb(139, 87, 137);
         border-color: transparent;
         background: none;
     }
