@@ -7,7 +7,7 @@
 {{#foreach posts}}
 <article class="{{post_class}}">
     <header class="post-header">
-        <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
+        <h2 class="post-title"><a href="{{url}}" analytics-on="click" analytics-event="click" analytics-category="blog" analytics-label="read {{title}}">{{{title}}}</a></h2>
     </header>
     <section class="post-excerpt">
         <p>{{excerpt words="26"}} <a class="read-more" href="{{url}}">&raquo;</a></p>

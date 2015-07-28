@@ -8,9 +8,9 @@
 
 <header class="main-header post-head {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}">
     <nav class="main-nav {{#if image}}overlay{{/if}} clearfix">
-        {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>{{/if}}
+        {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}" analytics-on="click" analytics-event="click" analytics-category="blog" analytics-label="Main"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>{{/if}}
         {{#if @blog.navigation}}
-            <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
+            <a class="menu-button" href="#" analytics-on="click" analytics-event="click" analytics-category="blog" analytics-label="Main"><img src="http://media.hashtagcharity.org/common/hamburger_menu/menu_icon_02.svg"></a>
         {{/if}}
     </nav>
 </header>
@@ -36,12 +36,12 @@
 
             {{#if image}}
             <figure class="author-image">
-                <a class="img" href="{{url}}" style="background-image: url({{image}})"><span class="hidden">{{name}}'s Picture</span></a>
+                <a class="img" href="{{url}}" style="background-image: url({{image}})" analytics-on="click" analytics-event="click" analytics-category="blog" analytics-label="author {{name}}"><span class="hidden">{{name}}'s Picture</span></a>
             </figure>
             {{/if}}
 
             <section class="author">
-                <h4><a href="{{url}}">{{name}}</a></h4>
+                <h4><a href="{{url}}" analytics-on="click" analytics-event="click" analytics-category="blog" analytics-label="author {{name}}">{{name}}</a></h4>
 
                 {{#if bio}}
                     <p>{{bio}}</p>
@@ -79,7 +79,7 @@
 
 <aside class="read-next">
     {{#next_post}}
-    <a class="read-next-story {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">
+    <a class="read-next-story {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}" analytics-on="click" analytics-event="click" analytics-category="blog" analytics-label="Read Next Post">
         <section class="post">
             <h2>{{title}}</h2>
             <p>{{excerpt words="19"}}&hellip;</p>
@@ -87,7 +87,7 @@
     </a>
     {{/next_post}}
     {{#prev_post}}
-    <a class="read-next-story prev {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">
+    <a class="read-next-story prev {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}" analytics-on="click" analytics-event="click" analytics-category="blog" analytics-label="Read Prev Post">
         <section class="post">
             <h2>{{title}}</h2>
             <p>{{excerpt words="19"}}&hellip;</p>

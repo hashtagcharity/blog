@@ -631,7 +631,7 @@ body.nav-opened .nav {
     counter-reset: item;
 }
 
-.nav li:before {
+/*.nav li:before {
     display: block;
     float: right;
     padding-right: 4%;
@@ -642,7 +642,7 @@ body.nav-opened .nav {
     color: #B8B8B8;
     content: counter(item, lower-roman);
     counter-increment: item;
-}
+}*/
 .nav li {
     margin: 0;
 }
@@ -656,12 +656,12 @@ body.nav-opened .nav {
     white-space: nowrap;
     text-overflow: ellipsis;
 }
-.nav li a:after {
+/*.nav li a:after {
     display: inline-block;
     content: " .......................................................";
     color: rgba(255,255,255,0.2);
     margin-left: 5px;
-}
+}*/
 .nav .nav-current:before {
     color: #fff;
 }
@@ -787,15 +787,14 @@ body.nav-opened .nav {
     box-sizing: border-box;
     display: inline-block;
     float: left;
-    height: 38px;
-    padding: 0 15px;
+    height: 58px;
+    padding: 15px;
     border-style: solid;
     border-width: 0;
     opacity: 1;
     text-align: center;
     font-size: 12px;
     text-transform: uppercase;
-    line-height: 35px;
     white-space: nowrap;
     border-radius: 3px;
     transition: all 0.5s ease;
@@ -838,13 +837,13 @@ body.nav-opened .nav {
 
 /* When the navigation is opened */
 .nav-opened .menu-button {
-    padding: 0 12px;
-   /* background: #111;
-    border-color: #111;*/
+    /*padding: 0 12px;*/
+    background: rgb(50, 15, 35);
+    border-color: rgb(50, 15, 35);
     color: #fff;
-    -webkit-transform: translate3D(-94px, 0, 0);
-        -ms-transform: translate3D(-94px, 0, 0);
-            transform: translate3D(-94px, 0, 0);
+    -webkit-transform: translate3D(-40px, 0, 0);
+        -ms-transform: translate3D(-40px, 0, 0);
+            transform: translate3D(-40px, 0, 0);
     transition: all 0.3s ease;
 }
 
